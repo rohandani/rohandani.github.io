@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Sarah Johnson",
+    "position": "CTO",
+    "company": "Tech Innovations Inc",
+    "linkedin": "https://www.linkedin.com/in/example-profile-1",
+    "text": "Rohan delivered exceptional results on our location-based solution. His technical expertise and innovative approach exceeded our expectations. The project was completed ahead of schedule with outstanding quality.",
+    "rating": 5,
+    "project": "Location-Based Solution",
+    "duration": "Jan 2023 - Jun 2023"
+  },
+  {
+    "name": "Michael Chen",
+    "position": "Product Manager",
+    "company": "CloudScale Solutions",
+    "linkedin": "https://www.linkedin.com/in/example-profile-2",
+    "text": "Working with Rohan was a game-changer for our product. His deep understanding of scalable architecture and AI/ML integration helped us build a robust platform that our users love.",
+    "rating": 5,
+    "project": "SaaS Platform Development",
+    "duration": "Mar 2022 - Dec 2022"
+  },
+  {
+    "name": "Emily Rodriguez",
+    "position": "Engineering Director",
+    "company": "Enterprise Systems Corp",
+    "linkedin": "https://www.linkedin.com/in/example-profile-3",
+    "text": "Rohan's leadership and technical skills were instrumental in modernizing our legacy applications. His expertise in React and cloud technologies transformed our development process.",
+    "rating": 4,
+    "project": "Legacy System Modernization",
+    "duration": "Sep 2021 - May 2022"
+  }
+]

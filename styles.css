@@ -570,6 +570,18 @@ section {
     left: 1rem;
 }
 
+.testimonial-rating {
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.testimonial-rating i {
+    color: #fbbf24;
+    font-size: 1rem;
+}
+
 .testimonial-text {
     font-style: italic;
     color: var(--text-secondary);

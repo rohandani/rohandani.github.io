@@ -300,6 +300,26 @@ function createTestimonialCard(testimonial) {
     quote.className = 'testimonial-quote';
     quote.innerHTML = '<i class="fas fa-quote-left"></i>';
     
+    // Add star rating if available
+    if (testimonial.rating) {
+        const ratingDiv = document.createElement('div');
+        ratingDiv.className = 'testimonial-rating';
+        ratingDiv.style.display = 'flex';
+        ratingDiv.style.gap = '0.25rem';
+        ratingDiv.style.marginBottom = '1rem';
+        ratingDiv.style.justifyContent = 'center';
+        
+        for (let i = 1; i <= 5; i++) {
+            const star = document.createElement('i');
+            star.className = i <= testimonial.rating ? 'fas fa-star' : 'far fa-star';
+            star.style.color = '#fbbf24';
+            star.style.fontSize = '1rem';
+            ratingDiv.appendChild(star);
+        }
+        
+        card.appendChild(ratingDiv);
+    }
+    
     const text = document.createElement('p');
     text.className = 'testimonial-text';
     text.textContent = testimonial.text;
