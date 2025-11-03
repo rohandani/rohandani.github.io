@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Client Name 1",
+    "position": "CTO",
+    "company": "Tech Company",
+    "linkedin": "",
+    "text": "Rohan delivered exceptional results on our location-based solution. His technical expertise and innovative approach exceeded our expectations. The project was completed ahead of schedule with outstanding quality.",
+    "rating": 5,
+    "project": "Location-Based Solution",
+    "duration": ""
+  },
+  {
+    "name": "Client Name 2",
+    "position": "Product Manager",
+    "company": "SaaS Startup",
+    "linkedin": "",
+    "text": "Working with Rohan was a game-changer for our product. His deep understanding of scalable architecture and AI/ML integration helped us build a robust platform that our users love.",
+    "rating": 5,
+    "project": "SaaS Platform Development",
+    "duration": ""
+  },
+  {
+    "name": "Client Name 3",
+    "position": "Engineering Director",
+    "company": "Enterprise Corp",
+    "linkedin": "",
+    "text": "Rohan's leadership and technical skills were instrumental in modernizing our legacy applications. His expertise in React and cloud technologies transformed our development process.",
+    "rating": 5,
+    "project": "Legacy System Modernization",
+    "duration": ""
+  }
+]

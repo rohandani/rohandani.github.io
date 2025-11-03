@@ -1,0 +1,82 @@
+[
+  {
+    "title": "EV Charging Dashboard Platform",
+    "description": "Developed comprehensive dashboard application using Material UI in Next.js from scratch, providing real-time performance analytics for charging sites with advanced data visualization using Recharts.",
+    "technologies": ["Next.js", "Material UI", "Recharts", "TypeScript", "GraphQL"],
+    "icon": "charging-station",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "EV Charging Mobile App",
+    "description": "Maintained and enhanced iOS and Android mobile application using React Native and GraphQL, implementing features like food coupon integration for charging sessions to drive station footfall and user engagement.",
+    "technologies": ["React Native", "GraphQL", "Redux", "iOS", "Android"],
+    "icon": "mobile-alt",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "Multi-Client Payment System",
+    "description": "Led implementation of Stripe Payments with Connected Accounts feature for multiple clients, ensuring seamless, secure, and scalable payment processing across the platform.",
+    "technologies": ["Stripe API", "Node.js", "React", "Payment Gateway", "Security"],
+    "icon": "credit-card",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "Solar Panel Design System",
+    "description": "Developed complex solar panel design tool using Google Maps API and Drawing Library, solving intricate geospatial challenges. Migrated from plain JavaScript to Angular 6 with RxJS state management.",
+    "technologies": ["Angular 6", "Google Maps API", "RxJS", "TypeScript", "Karma", "Jasmine"],
+    "icon": "solar-panel",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "AWS Serverless Workflow System",
+    "description": "Built complex serverless workflows using AWS Step Functions, State Machine, Lambda, S3, and SQS to solve challenging problem statements with high scalability and reliability.",
+    "technologies": ["AWS Lambda", "Step Functions", "S3", "SQS", "Python", "Node.js"],
+    "icon": "cloud",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "eLearning Platform with xAPI",
+    "description": "Developed complete learning system platform using MariaDB and Node.js backend. Integrated Tincan API/xAPI with open source LRS, leading a team of 5 members to deliver full end-to-end solution.",
+    "technologies": ["Node.js", "MariaDB", "xAPI", "Tincan API", "React", "LRS"],
+    "icon": "graduation-cap",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "Youth Social Networking Platform",
+    "description": "Developed backend for youth social networking site using Node.js and Restify. Implemented Neo4j graph database to maintain complex multi-directional relationships between entities.",
+    "technologies": ["Node.js", "Restify", "Neo4j", "Graph Database", "REST API"],
+    "icon": "users",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "Gmail Management Chrome Extension",
+    "description": "Developed Chrome Extension for better Gmail management in pre-AI/ML era, improving workflow efficiency and user productivity with innovative features.",
+    "technologies": ["JavaScript", "Chrome Extension API", "HTML5", "CSS3"],
+    "icon": "envelope",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "Multi-Tenant SaaS Platform",
+    "description": "Architected and managed high-scalability multi-tenant product with custom policies, advanced security measures, and comprehensive monitoring systems at Aptara Inc.",
+    "technologies": ["Node.js", "Multi-tenancy", "Security", "Monitoring", "Scalability"],
+    "icon": "server",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "Kids Social Networking Platform",
+    "description": "Single-handedly developed frontend for kids' social networking platform using Adobe Flex and ActionScript 3.0. Built Admin Portal and successfully migrated from Flex 4 to Flex 4.5.",
+    "technologies": ["Adobe Flex", "ActionScript 3.0", "Flex 4.5", "Frontend"],
+    "icon": "child",
+    "github": "",
+    "demo": ""
+  }
+]

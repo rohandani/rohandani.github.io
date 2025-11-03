@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share your testimonial for Rohan H. Dani">
+    <title>Submit Testimonial - Rohan H. Dani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .testimonial-form-page {
+            min-height: 100vh;
+            padding: 6rem 0 4rem;
+            background: var(--bg-secondary);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .form-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .form-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .testimonial-form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+        }
+
+        .form-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .form-group label .required {
+            color: #ef4444;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border-color);
+            border-radius: 0.5rem;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form-group small {
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .rating-input {
+            display: flex;
+            gap: 0.5rem;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        .rating-input input[type="radio"] {
+            display: none;
+        }
+
+        .rating-input label {
+            cursor: pointer;
+            font-size: 2rem;
+            color: var(--border-color);
+            transition: var(--transition);
+        }
+
+        .rating-input input[type="radio"]:checked ~ label,
+        .rating-input label:hover,
+        .rating-input label:hover ~ label {
+            color: #fbbf24;
+        }
+
+        .consent-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .consent-group input[type="checkbox"] {
+            width: auto;
+            margin-top: 0.25rem;
+            cursor: pointer;
+        }
+
+        .consent-group label {
+            margin: 0;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .success-message,
+        .error-message {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: none;
+        }
+
+        .success-message {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #10b981;
+        }
+
+        .error-message {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #ef4444;
+        }
+
+        .success-message.show,
+        .error-message.show {
+            display: block;
+        }
+
+        .info-box {
+            background: rgba(99, 102, 241, 0.1);
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-box p {
+            margin: 0;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            gap: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-form-container {
+                padding: 2rem 1.5rem;
+            }
+
+            .form-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">RD</div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="testimonial-form-page">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+
+            <div class="form-header">
+                <h1>Share Your Testimonial</h1>
+                <p>
+                    Your feedback helps showcase the impact of our collaboration. 
+                    All testimonials are reviewed before being published.
+                </p>
+            </div>
+
+            <div class="testimonial-form-container">
+                <div class="info-box">
+                    <p>
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Privacy Note:</strong> Your testimonial will be reviewed and approved before appearing on the portfolio. 
+                        Your LinkedIn profile will be linked to add credibility.
+                    </p>
+                </div>
+
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i>
+                    <strong>Thank you!</strong> Your testimonial has been submitted successfully. 
+                    It will be reviewed and published soon.
+                </div>
+
+                <div class="error-message" id="errorMessage">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <strong>Oops!</strong> Something went wrong. Please try again or contact directly.
+                </div>
+
+                <form id="testimonialForm">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-user"></i> Your Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">
+                                Full Name <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                placeholder="John Doe"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                placeholder="john@example.com"
+                            >
+                            <small>Your email will not be displayed publicly</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="position">
+                                Job Title <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="position" 
+                                name="position" 
+                                required
+                                placeholder="e.g., CTO, Product Manager, CEO"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">
+                                Company Name <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="company" 
+                                name="company" 
+                                required
+                                placeholder="Your Company Name"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="linkedin">
+                                LinkedIn Profile URL <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="url" 
+                                id="linkedin" 
+                                name="linkedin" 
+                                required
+                                placeholder="https://www.linkedin.com/in/yourprofile"
+                            >
+                            <small>This adds credibility and will be linked with your testimonial</small>
+                        </div>
+                    </div>
+
+                    <!-- Collaboration Details -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-briefcase"></i> Collaboration Details</h3>
+                        
+                        <div class="form-group">
+                            <label for="project">
+                                Project/Work Description
+                            </label>
+                            <input 
+                                type="text" 
+                                id="project" 
+                                name="project" 
+                                placeholder="e.g., E-commerce Platform Development"
+                            >
+                            <small>Optional: Brief description of the project we worked on together</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="duration">
+                                Collaboration Period
+                            </label>
+                            <input 
+                                type="text" 
+                                id="duration" 
+                                name="duration" 
+                                placeholder="e.g., Jan 2023 - Jun 2023"
+                            >
+                            <small>Optional: When did we work together?</small>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-comment-dots"></i> Your Testimonial</h3>
+                        
+                        <div class="form-group">
+                            <label for="testimonial">
+                                Testimonial <span class="required">*</span>
+                            </label>
+                            <textarea 
+                                id="testimonial" 
+                                name="testimonial" 
+                                required
+                                placeholder="Share your experience working with Rohan. What stood out? What was the impact? Be specific about skills, work quality, or results achieved."
+                            ></textarea>
+                            <small>Please be specific about the work quality, skills, or results achieved (minimum 50 characters)</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                Overall Rating <span class="required">*</span>
+                            </label>
+                            <div class="rating-input">
+                                <input type="radio" id="star5" name="rating" value="5" required>
+                                <label for="star5"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1"><i class="fas fa-star"></i></label>
+                            </div>
+                            <small>Click to rate (1-5 stars)</small>
+                        </div>
+                    </div>
+
+                    <!-- Consent -->
+                    <div class="consent-group">
+                        <input 
+                            type="checkbox" 
+                            id="consent" 
+                            name="consent" 
+                            required
+                        >
+                        <label for="consent">
+                            I consent to having my testimonial, name, job title, company, and LinkedIn profile 
+                            displayed on Rohan's portfolio website. I understand this will be reviewed before publication. 
+                            <span class="required">*</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> Submit Testimonial
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rohan H. Dani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="testimonial-form.js"></script>
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+    </script>
+</body>
+</html>

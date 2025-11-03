@@ -1,0 +1,59 @@
+Technical Lead at Forgeahead Solutions Corp.
+Surrey, Canada
+Nov 2023 – Present
+• Developed dashboard application using Material UI in NextJS from scratch which gives an overall summary
+on how each Charging site is performing.
+• Have been adding new features and maintaining the mobile app for iOS and Android developed in React
+Native and GraphQL
+• Collaborating closely with stakeholders to prioritize feature improvements, ensure alignment with business
+objectives, and integrate feedback for continuous refinement throughout the development process.
+• Led the implementation of Stripe Payments for multiple clients, optimizing the use of the Connected
+Accounts feature to ensure seamless, secure, and scalable payment processing.
+• Engaging in ongoing performance monitoring and debugging, employing proactive measures to address
+potential issues, and maintaining the platform's stability and reliability.
+• Consistently refining the dashboard with Recharts and modern libraries while exploring new technologies
+and industry standards to elevate performance, user engagement, and security.
+• Implemented a seamless food coupon integration for charging sessions within the mobile app, driving
+increased station footfall and enhancing user engagement through value-added incentives
+Technical Lead at Forgeahead Solutions Corp.
+Pune, MH, India
+Oct 2014 – Oct 2023
+• Led diverse, high-impact technology projects across multiple domains like eLearning, Construction, Solar
+etc. demonstrating versatility and deep technical expertise.
+• Developed a web application using React and integrated APIs developed in Python.
+• Used AWS services extensively such as Step Functions, State Machine, Lambda, S3, SQS to solve the
+complex problem statements.
+• Introduced Tincan API/ xAPI integration with open source LRS for one of the learning system platforms.
+• Used MariaDB and NodeJS to develop the complete backend of this learning system platform.
+• Was involved in providing full end-to-end solution and handling the team size of 5 members during
+pandemic time.
+• Used Google Maps API and Google Maps Drawing Library to solve one of the most complex use cases in
+Solar Panel Design system.
+• Led the migration from plain JavaScript project to Angular6 project & introduced state management using
+RxJS.
+• Introduced test cases for this project using Karma and Jasmine.
+• Was involved into backend development for one of the youth’s social networking site platforms using
+NodeJS and Restify.
+• Used Neo4j graph database to maintain the multiple/ multi direction relationships between 2 same entities
+• Developed Google Chrome Extension for managing the Gmail in a better and easy way when it was not an
+AI/ML era.
+Software Engineer at Aptara Inc.
+Pune, MH, India
+Jan 2014– Oct 2014
+• Architected and managed high scalability multi tenancy product implementing custom policies, security
+measures, and monitoring systems.
+• Worked on theming portion for one of the products.
+• Designed and developed mobile applications for iOS and Android, integrating with backend APIs and
+implementing features such as push notifications and responsive UI using Cordova a hybrid application
+development platform.
+Developer at Teknopoint Multimedia Pvt. Ltd.
+Mumbai/ Pune, MH, India
+Feb 2011 – Dec 2013
+• Single handedly worked on Client Location at the start of the career and developed a frontend using Adobe
+Flex and ActionScript 3.0 for a social networking platform for kids.
+• Worked on Admin Portal for the same platform using Flex4.
+• Migrated the project from Flex 4 to Flex 4.5
+• Successfully completed an assignment on client location and received many appreciations from client
+during the tenure.
+• Consistently delivered high-quality solutions while adapting quickly to diverse project requirements and
+client specifications.
