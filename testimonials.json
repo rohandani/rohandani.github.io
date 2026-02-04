@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "name": "Emanuel Siu",
+    "position": "Lead Frontend Developer",
+    "company": "Chargenet Stations",
+    "linkedin": "http://linkedin.com/in/emanuel-siu",
+    "text": "I had the pleasure of working with Rohan at Chargenet Stations developing apps with React and React Native. His contributions were a breath of fresh air. His code was written in a well organized, timely, and easy to understand manner. He was clearly very familiar with the technology and concepts. These skills paired well with his good communication and intuition to ask good questions and collaborate effectively. Any team would benefit greatly from having Rohan work with them.",
+    "rating": 5,
+    "project": "EV charging mobile app and web dashboard",
+    "duration": "July 2023 - Nov 2023"
+  },
+]
